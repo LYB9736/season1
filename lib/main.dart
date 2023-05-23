@@ -20,9 +20,21 @@ class Fruit {
 
 final fruits = [
   Fruit(
-    name: '복숭아',
+    name: '복숭아(peach)',
     season: '여름(5월 ~ 8월)',
     image: 'images/peach.jpg',
+    description: '복숭아는 대표적인 여름 제철 과일이다.',
+  ),
+  Fruit(
+    name: '포도(grape)',
+    season: '여름(5월 ~ 8월)',
+    image: 'images/grape.jpg',
+    description: '복숭아는 대표적인 여름 제철 과일이다.',
+  ),
+  Fruit(
+    name: '자두(plum)',
+    season: '여름(5월 ~ 8월)',
+    image: 'images/plum.jpg',
     description: '복숭아는 대표적인 여름 제철 과일이다.',
   ),
   Fruit(
