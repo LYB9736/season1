@@ -63,7 +63,12 @@ flutter:
     - images/apple.jpg
     - images/grape.jpg
     - images/plum.jpg
+    - images/pear.jpg
+    - images/apricot.jpg
     - images/peach.jpg
+    - images/peach2.jpg
+    - images/persimmon.jpg
+    - images/fig.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
