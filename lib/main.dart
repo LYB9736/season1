@@ -20,20 +20,20 @@ class Fruit {
 
 final fruits = [
   Fruit(
-    name: '복숭아(peach)',
+    name: '복숭아(Peach)',
     season: '여름(5월 ~ 8월)',
     image: 'images/peach.jpg',
     description: '개요 : 복숭아는 대표적인 여름 제철 과일이다.\n'
         '상세 : ',
   ),
   Fruit(
-    name: '포도(grape)',
+    name: '포도(Grape)',
     season: '여름(5월 ~ 8월)',
     image: 'images/grape.jpg',
     description: '복숭아는 대표적인 여름 제철 과일이다.',
   ),
   Fruit(
-    name: '자두(plum)',
+    name: '자두(Plum)',
     season: '여름(5월 ~ 8월)',
     image: 'images/plum.jpg',
     description: '복숭아는 대표적인 여름 제철 과일이다.',
@@ -45,13 +45,13 @@ final fruits = [
     description: '복숭아는 대표적인 여름 제철 과일이다.',
   ),
   Fruit(
-    name: '사과(apple)',
+    name: '사과(Apple)',
     season: '가을(9월 ~ 11월)',
     image: 'images/apple.jpg',
     description: '사과는 대표적인 가을 제철 과일이다.',
   ),
   Fruit(
-    name: '배(pear)',
+    name: '배(Pear)',
     season: '가을(9월 ~ 11월)',
     image: 'images/pear.jpg',
     description: '사과는 대표적인 가을 제철 과일이다.',
@@ -66,6 +66,18 @@ final fruits = [
     name: '무화과(Fig)',
     season: '가을(9월 ~ 11월)',
     image: 'images/fig.jpg',
+    description: '사과는 대표적인 가을 제철 과일이다.',
+  ),
+  Fruit(
+    name: '귤(Mandarin)',
+    season: '겨울(12월 ~ 2월)',
+    image: 'images/mandarin.jpg',
+    description: '사과는 대표적인 가을 제철 과일이다.',
+  ),
+  Fruit(
+    name: '유자(Yuzu)',
+    season: '겨울(12월 ~ 2월)',
+    image: 'images/yuzu.jpg',
     description: '사과는 대표적인 가을 제철 과일이다.',
   ),
 ];
@@ -112,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SeasonButton(
-                  text: '여름',
+                  text: '여름(5월 ~ 8월)',
                   isSelected: selectedSeason == '여름(5월 ~ 8월)',
                   onPressed: () {
                     setState(() {
@@ -121,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
                 SeasonButton(
-                  text: '가을',
+                  text: '가을(9월 ~ 11월)',
                   isSelected: selectedSeason == '가을(9월 ~ 11월)',
                   onPressed: () {
                     setState(() {
@@ -130,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
                 SeasonButton(
-                  text: '겨울',
+                  text: '겨울(12월 ~ 2월)',
                   isSelected: selectedSeason == '겨울(12월 ~ 2월)',
                   onPressed: () {
                     setState(() {
