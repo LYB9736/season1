@@ -47,7 +47,7 @@ final fruits = [
   Fruit(
       name: '포도(Grape)',
       season: '여름(5월 ~ 8월)',
-      images: ['images/grape.jpg', 'images/peach2.jpg'],
+      images: ['images/grape.jpg', 'images/grape2.jpg', 'images/grape3.jpg'],
       description: '포도는 Vitaceae과에 속하는 과일로, 주로 여름과 가을에 수확되는 인기 있는 과일입니다. 신선한 상태로 섭취할 수 있을 뿐만 아니라 건포도, 포도주 등 다양한 형태로 이용됩니다. 이제 포도에 대한 개요, 상세 정보, 다양한 종류, 효능 및 주의사항에 대해 자세히 알려드리겠습니다.\n'
           '1. 개요\n'
           '외형: 포도는 작은 크기에서 큰 크기까지 다양한 크기를 가지며, 보통 둥근 형태입니다. 포도송이라는 가지에 여러 개의 과일이 달려 있습니다.\n'
@@ -73,7 +73,7 @@ final fruits = [
   Fruit(
     name: '자두(Plum)',
     season: '여름(5월 ~ 8월)',
-    images: ['images/plum.jpg', 'images/peach2.jpg'],
+    images: ['images/plum.jpg', 'images/plum2.jpg'],
     description: '자두는 장과류 식물인 Prunus domestica의 열매로, 주로 여름과 가을에 수확되는 과일입니다. 자두는 다양한 색상과 크기를 가지며, 달콤한 맛과 풍부한 과즙이 특징입니다. 이제 자두에 대한 개요, 상세 정보, 다양한 종류, 효능 및 주의사항에 대해 자세히 알려드리겠습니다.\n'
         '1. 개요\n'
         '외형 : 자두는 보통 둥글거나 타원형이며, 피부는 매끈하고 광택이 있습니다. 색상은 보라색, 빨간색, 노란색 등 다양한 변종이 있습니다.\n'
@@ -96,7 +96,7 @@ final fruits = [
   Fruit(
       name: '살구(Apricot)',
       season: '여름(5월 ~ 8월)',
-      images: ['images/apricot.jpg', 'images/peach2.jpg'],
+      images: ['images/apricot.jpg', 'images/apricot2.jpg'],
       description: '살구는 Prunus armeniaca라는 식물의 열매로, 주로 봄과 여름에 수확되는 과일입니다. 살구는 주황색으로 둥근 형태를 가지며, 달콤하고 산미가 있어 상큼한 맛을 가지고 있습니다. 이제 살구에 대한 개요, 상세 정보, 다양한 종류, 효능 및 주의사항에 대해 자세히 알려드리겠습니다.\n'
           '1. 개요\n'
           '여름에 주로 수확되는 과일로, 주로 주황색을 띠고 둥근 형태를 가지며, 크기는 중간 정도입니다.\n'
@@ -336,17 +336,18 @@ class FruitDetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: 515, // 사진 영역의 높이 설정
+              height: 350, // 이미지 영역의 높이 설정
               child: ListView.builder(
                 scrollDirection: Axis.horizontal, // 가로 스크롤
                 itemCount: fruit.images.length, // 이미지 리스트의 길이만큼 반복
                 itemBuilder: (context, index) {
                   final image = fruit.images[index];
-                  return Padding(
-                    padding: EdgeInsets.only(right: 8),
+                  return Container(
+                    width: 350, // 이미지 컨테이너의 너비 설정
+                    height: 300, // 이미지 컨테이너의 높이 설정
                     child: Image.asset(
                       image,
-                      fit: BoxFit.cover,
+                      fit: BoxFit.cover, // 이미지를 부모 위젯에 꽉 채움
                     ),
                   );
                 },

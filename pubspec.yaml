@@ -62,9 +62,13 @@ flutter:
   assets:
     - images/apple.jpg
     - images/grape.jpg
+    - images/grape2.jpg
+    - images/grape3.jpg
     - images/plum.jpg
+    - images/plum2.jpg
     - images/pear.jpg
     - images/apricot.jpg
+    - images/apricot2.jpg
     - images/peach.jpg
     - images/peach2.jpg
     - images/persimmon.jpg
