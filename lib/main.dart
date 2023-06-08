@@ -365,7 +365,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: EdgeInsets.all(16),
               itemCount: getFilteredFruits().length,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+                crossAxisCount: 1,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
               ),
@@ -432,7 +432,7 @@ class SeasonButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ButtonStyle(
-        backgroundColor: isSelected ? MaterialStateProperty.all(Colors.blue) : null,
+        backgroundColor: isSelected ? MaterialStateProperty.all(Colors.green) : null,
       ),
       child: Text(
         text,
@@ -465,8 +465,8 @@ class FruitDetailScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final image = fruit.images[index];
                   return Container(
-                    width: 350, // 이미지 컨테이너의 너비 설정
-                    height: 300, // 이미지 컨테이너의 높이 설정
+                    width: 410, // 이미지 컨테이너의 너비 설정
+                    height: 10, // 이미지 컨테이너의 높이 설정
                     child: Image.asset(
                       image,
                       fit: BoxFit.cover, // 이미지를 부모 위젯에 꽉 채움
